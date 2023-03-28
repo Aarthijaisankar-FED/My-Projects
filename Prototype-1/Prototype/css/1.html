@@ -1,0 +1,61 @@
+<html>
+<head>
+<style>
+.dropdown-menu {
+    max-height: 50px;
+    overflow-y: auto;
+    top: 73px;
+    left: 20px;
+}
+</style>
+
+
+<script type="text/javascript">
+$('#test').typeahead({
+    source: ['algo', 'pepe', 'algo2', 'algo34', 'pepe3', 'algo42'],
+    items: 'all',
+    minLength: 2
+});
+
+$('#test').keydown(function(e) {
+    if($('.dropdown-menu').is(':visible')) {
+        
+        var menu = $('.dropdown-menu');
+        var active = menu.find('.active');
+        var height = active.outerHeight(); //Height of <li>
+        var top = menu.scrollTop(); //Current top of scroll window
+        var menuHeight = menu[0].scrollHeight; //Full height of <ul>
+        
+        //Up
+        if(e.keyCode == 38) {
+            if(top != 0) {
+                //All but top item goes up
+                menu.scrollTop(top - height);
+            } else {
+                //Top item - go to bottom of menu
+                menu.scrollTop(menuHeight + height);
+            }
+        }    
+        //Down
+        if(e.keyCode == 40) {
+            //window.alert(menuHeight - height);
+            var nextHeight = top + height; //Next scrollTop height
+            var maxHeight = menuHeight - height; //Max scrollTop height
+            
+            if(nextHeight <= maxHeight) {
+                //All but bottom item goes down
+                menu.scrollTop(top + height);
+            } else {
+                //Bottom item - go to top of menu
+                menu.scrollTop(0);
+            }
+        }
+    }
+});
+</script>
+</head>
+<body>
+<input type="text" class="form-control" data-provide="typeahead" id="test">
+</body>
+</html>
+

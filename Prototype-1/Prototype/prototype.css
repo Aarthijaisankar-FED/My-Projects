@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding:0;
+    }
+    
+    #header{
+    width:100%;
+    max-height:100px;
+    background:#FA4415;
+    position:relative;
+    }
+    
+    nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5% 1.5%;
+    }
+    
+    .nav-links{
+    flex:1;
+    text-align:right;
+    }
+    
+    .nav-links li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    color: white;
+    font-size: 20px;
+    }
+    
+    .banner{
+    background-image: url(images/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 512px;
+    }
+    
+    .sectionItems{
+    text-align:center;
+    margin:auto;
+    width:100%;
+    background:#F4F4F4;
+    }
+    .sectionItems h1{
+      padding: 0 0 6px 0;
+      font-size: 40px;
+      font-weight: 700;
+      color: #fc4311;
+      line-height: 46px;
+      border-bottom: #fc4311 solid 1px;
+      width: 210px;
+      margin: 0 auto;
+      margin-bottom: 0px;
+      margin-bottom: 20px;
+      padding-top:20px;
+    }
+    
+    .sectionItems p{
+      color: #666;
+    font-size: 14px;
+    font-family: poppins,sans-serif;
+    line-height: 1.80857;
+    font-weight: 400;
+    }
+    
+    .contact{
+    text-align:center;
+    margin:auto;
+    width:100%;
+    height:300px;
+    background:#F4F4F4;
+    }
+    
+    .contact h1{
+      padding: 0 0 6px 0;
+      font-weight: 700;
+      color: #fc4311;
+      line-height: 46px;
+      border-bottom: #fc4311 solid 1px;
+      width: 210px;
+      margin: 0 auto;
+        margin-bottom: 0px;
+      padding-top:20px;
+      margin-bottom: 20px;
+    }
+    
+    .contact p{
+      color: #666;
+    font-size: 14px;
+    font-family: poppins,sans-serif;
+    line-height: 1.80857;
+    font-weight: 400;
+    width: 50%;
+        margin: auto;
+    }
+    
+    .row{
+    margin-top:5%;
+    display: flex;
+    justify-content: space-between;
+    }
+    
+    .columnCol{
+    flex-basis:31%;
+    box-sizing:border-box;
+    padding:20px 12px;
+    }
+    
+    .columnCol img{
+    width:100%;
+    max-width:100%;
+    }
+    
+    .contact{
+    background:#2F2D2E;
+    width:100%;
+    max-height:300px;
+    display:flex;
+    }
+    
+    .footer{
+    background:#FD4312;
+    width:100%;
+    height:150px;
+    }
+    
+    .footer h1{
+      padding: 0 0 6px 0;
+      font-size: 40px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 46px;
+      border-bottom: #fc4311 solid 1px;
+      width: 210px;
+      margin: 0 auto;
+        margin-bottom: 0px;
+      padding-top:20px;
+    text-align:center;
+    }
+    
+    .footer p{
+      color: #fff;
+    font-size: 14px;
+    font-family: poppins,sans-serif;
+    line-height: 50px;
+    font-weight: 400;
+    width: 80%;
+        margin: auto;
+    text-align:center;
+    }
+    
+    @media(max-width:700px){
+    
+    .contact{
+    flex-direction:column;
+    height:auto;
+    max-height: 100%;
+    }
+    
+    .contact p{
+    color: #666;
+        font-size: 14px;
+        font-family: poppins,sans-serif;
+        line-height: 1.80857;
+        font-weight: 400;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    
+    .nav-links ul li {
+    display: block;
+    line-height: 25px;
+    background: rgba(255,0,0,0.4);
+    cursor: pointer;
+    }
+    
+    #header {
+        width: 100%;
+        max-height: 290px;
+        background: #FA4415;
+        position: relative;
+    }
+    .nav-links{
+    flex:none;/*............*/
+    display:block;
+    text-align:center;
+    }
+    
+    .nav-links ul{
+    width:100%;
+    }
+    
+    .nav-links ul li{
+        display: block;
+        border-top: 1px solid #fff;
+        font-size: 22px;
+        height: 25px;
+        line-height: 25px;
+    }
+    .row{
+    flex-direction:column;
+    }
+    .footer {
+        background: #FD4312;
+        width: 100%;
+        height: auto;
+    }
+    .footer p {
+        color: #fff;
+        font-size: 14px;
+        font-family: poppins,sans-serif;
+        line-height: 25px;
+        font-weight: 400;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    }
